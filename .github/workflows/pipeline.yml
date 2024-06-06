@@ -23,7 +23,7 @@ jobs:
         uses: docker/setup-buildx-action@v1
 
       - name: Build Docker Image
-        run: docker build -t yujhthtyhj/github:tagname:latest -f Dockerfile .
+        run: docker build -t yujhthtyhj/github:latest -f Dockerfile .
 
       - name: Push Docker Image
-        run: docker push yujhthtyhj/github:tagname:latest
+        run: docker push yujhthtyhj/github:latest
